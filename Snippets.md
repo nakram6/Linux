@@ -683,10 +683,10 @@ until [[ $year =~ [0-9]{4} ]]; do
         read -p "A year, please! [nnnn] " year
 done
 echo "Selected year: $year"
-
+```
 
 ## fortune
-
+```bash
 
 #!/usr/bin/env bash
 
@@ -723,10 +723,10 @@ echo
 echo "${fortunes[mysterynumber]}"
 echo
 
-
+```
 
 ## multigame
-
+```bash
 
 #!/usr/bin/env bash
 
@@ -787,10 +787,10 @@ case $1 in
     *) choosegame;;
 esac
 
-
+```
 
 ## sysreport
-
+```bash
 
 #!/usr/bin/env bash
 
@@ -814,24 +814,31 @@ printf "\tFiles in pwd:\t%s\n" "$(ls | wc -l)"
 printf "\tGenerated on:\t%s\n" "$logdate"
 
 
-
+```
 
 
 
 
 ## 01
+```bash
+
 echo Hello, World.
 echo Mars is red.
 
+```
 
 ## Displays a greeting
+```bash
 
 echo Hello, World.
 echo Mars is red.
 
+```
 
 
 ## Displays a greeting2
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -841,8 +848,11 @@ echo Mars is red.
 echo Hello, World.
 echo Mars is red.
 
+```
 
 ## greeting.sh
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -851,9 +861,11 @@ FAVORITE_COLOR=blue
 
 echo Hi $NAME, your favorite color is $FAVORITE_COLOR.
 
+```
 
 ## params.sh
 
+```bash
 
 #!/usr/bin/env bash
 
@@ -864,8 +876,11 @@ echo $(pwd)
 
 exit 100
 
+```
 
 ## Sport
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -899,8 +914,10 @@ else
   echo “You’re equal or to high”
 fi
 
+```
 
 ## if
+```bash
 #!/usr/bin/env bash
 
 COLOR=$1
@@ -921,9 +938,11 @@ else
   echo “You’re equal or too high”
 fi
 
-
+```
 
 ## if
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -948,8 +967,11 @@ else
   echo "You've guessed it"
 fi
 
+```
 
 ## while 
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -964,9 +986,11 @@ done
 echo "while loop finished."
 exit 0
 
-
+```
 
 ## for
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -980,9 +1004,11 @@ done
 echo "for loop terminated"
 exit 0
 
-
+```
 
 ## for
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -1000,11 +1026,14 @@ done
 echo "for loop terminated"
 exit 0
 
+```
 
 
 
 
 ## counter
+
+```bash
 
 #!/usr/bin/env bash
 
@@ -1020,8 +1049,12 @@ done
 echo "Loop finished"
 exit 0
 
+```
+
 
 ## var
+
+```bash
 
 
 #!/usr/bin/env bash
@@ -1045,3 +1078,5 @@ echo "The PATH is: $PATH
 echo "The computer's name is $HOSTNAME, the user's name is $USER, and the home directory is $HOME."
 
 exit 0
+
+```
