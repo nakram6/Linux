@@ -1,3 +1,255 @@
+# 01
+echo Hello, World.
+echo Mars is red.
+
+
+# Displays a greeting
+
+echo Hello, World.
+echo Mars is red.
+
+
+
+#!/usr/bin/env bash
+
+
+# Displays a greeting
+
+echo Hello, World.
+echo Mars is red.
+
+
+# greeting.sh
+
+#!/usr/bin/env bash
+
+NAME="Bob Roberts"
+FAVORITE_COLOR=blue
+
+echo Hi $NAME, your favorite color is $FAVORITE_COLOR.
+
+
+# params.sh
+
+
+#!/usr/bin/env bash
+
+USER_NAME=$1
+echo Hello $USER_NAME
+echo $(date)
+echo $(pwd)
+
+exit 100
+
+
+# Sport
+
+#!/usr/bin/env bash
+
+# Sport script - uses parameters
+
+NAME=$1
+SPORT=$2
+
+# Prints the name and SPORT
+
+echo $NAME likes to watch $SPORT.
+
+
+# if
+
+#!/usr/bin/env bash
+
+COLOR=$1
+if [ $COLOR = "blue" ]
+then
+  echo "The color is blue"
+fi
+
+USER_GUESS=$2
+COMPUTER=50
+
+if [ $USER_GUESS -lt $COMPUTER ]
+then
+  echo "You're too low"
+else
+  echo “You’re equal or to high”
+fi
+
+
+# if
+#!/usr/bin/env bash
+
+COLOR=$1
+if [ $COLOR = "blue" ]
+then
+  echo "The color is blue"
+else
+  echo "The color is NOT blue"
+fi
+
+USER_GUESS=$2
+COMPUTER=50
+
+if [ $USER_GUESS -lt $COMPUTER ]
+then
+  echo "You're too low"
+else
+  echo “You’re equal or too high”
+fi
+
+
+
+# if
+
+#!/usr/bin/env bash
+
+COLOR=$1
+if [ $COLOR = "blue" ]
+then
+  echo "The color is blue"
+else
+  echo "The color is NOT blue"
+fi
+
+USER_GUESS=$2
+COMPUTER=50
+
+if [ $USER_GUESS -lt $COMPUTER ]
+then
+  echo "You're too low"
+elif [ $USER_GUESS -gt $COMPUTER ]
+then
+ echo "You're too high"
+else
+  echo "You've guessed it"
+fi
+
+
+# while 
+
+#!/usr/bin/env bash
+
+COUNT=0
+
+while [ $COUNT -lt 10 ]
+do
+  echo "COUNT = $COUNT"
+  ((COUNT++))
+done
+
+echo "while loop finished."
+exit 0
+
+
+
+# for
+
+#!/usr/bin/env bash
+
+NAMES=$@
+
+for NAME in $NAMES
+do
+  echo "Hello $NAME"
+done
+
+echo "for loop terminated"
+exit 0
+
+
+
+# for
+
+#!/usr/bin/env bash
+
+NAMES=$@
+
+for NAME in $NAMES
+do
+  if [ $NAME = "Tracy" ]
+  then
+    continue
+  fi
+  echo "Hello $NAME"
+done
+
+echo "for loop terminated"
+exit 0
+
+
+
+
+
+# counter
+
+#!/usr/bin/env bash
+
+COUNT=1
+END=$1
+
+while [ $COUNT -le $END ]
+do
+  echo "COUNT = $COUNT"
+  ((COUNT++))
+done
+
+echo "Loop finished"
+exit 0
+
+
+# var
+
+
+#!/usr/bin/env bash
+
+echo "The PATH is: $PATH"
+echo "The terminal is: $TERM"
+echo "The editor is: $EDITOR"
+
+if [ -z $EDITOR ]
+then
+  echo "The EDITOR variable is not set"
+fi
+
+PATH="/bob"
+echo "The PATH is: $PATH
+
+# env
+
+#!/usr/bin/env bash
+
+echo "The computer's name is $HOSTNAME, the user's name is $USER, and the home directory is $HOME."
+
+exit 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Code Snippets used in _Learning Bash Scripting_ on LinkedIn Learning
 
 This document contains the commands used in the course.
