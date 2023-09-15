@@ -1080,3 +1080,100 @@ echo "The computer's name is $HOSTNAME, the user's name is $USER, and the home d
 exit 0
 
 ```
+
+
+## function
+
+```bash
+
+
+#!/usr/bin/env bash
+
+function Hello() {
+  echo "Hello"
+}
+
+Goodbye() {
+  echo "Goodbye"
+}
+
+echo "Calling the Hello function"
+Hello
+
+echo "Calling the Goodbye function"
+Goodbye
+
+exit 0
+
+```
+
+
+## function 2
+
+```bash
+
+#!/usr/bin/env bash
+
+function Hello() {
+  local LNAME=$1
+  echo "Hello $LNAME"
+}
+
+Goodbye() {
+  echo "Goodbye $1"
+}
+
+echo "Calling the Hello function"
+Hello Bob
+
+echo "Calling the Goodbye function"
+Goodbye Robert
+
+exit 0
+
+```
+
+## pipe
+
+```bash
+
+#!/usr/bin/env bash
+
+FILES=`ls -1 | sort -r | head -3`
+COUNT=1
+
+for FILE in $FILES
+do
+  echo "File #$COUNT = $FILE"
+  ((COUNT++))
+done
+
+exit 0
+
+```
+
+## funct2
+
+```bash
+
+#!/usr/bin/env bash
+function GetFiles() {
+  FILES=`ls -1 | sort | head -10`
+}
+
+function ShowFiles(){
+  local COUNT=1
+  for FILE in $@
+  do
+    echo "FILE #$COUNT = $FILE"
+    ((COUNT++))
+  done
+}
+
+GetFiles
+ShowFiles $FILES
+exit 0
+
+
+```
+
