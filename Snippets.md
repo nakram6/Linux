@@ -819,17 +819,19 @@ printf "\tGenerated on:\t%s\n" "$logdate"
 
 
 
-# 01
+## 01
 echo Hello, World.
 echo Mars is red.
 
 
-# Displays a greeting
+## Displays a greeting
 
 echo Hello, World.
 echo Mars is red.
 
 
+
+## Displays a greeting2
 
 #!/usr/bin/env bash
 
@@ -840,7 +842,7 @@ echo Hello, World.
 echo Mars is red.
 
 
-# greeting.sh
+## greeting.sh
 
 #!/usr/bin/env bash
 
@@ -850,7 +852,7 @@ FAVORITE_COLOR=blue
 echo Hi $NAME, your favorite color is $FAVORITE_COLOR.
 
 
-# params.sh
+## params.sh
 
 
 #!/usr/bin/env bash
@@ -863,7 +865,7 @@ echo $(pwd)
 exit 100
 
 
-# Sport
+## Sport
 
 #!/usr/bin/env bash
 
@@ -877,7 +879,7 @@ SPORT=$2
 echo $NAME likes to watch $SPORT.
 
 
-# if
+## if
 
 #!/usr/bin/env bash
 
@@ -898,7 +900,7 @@ else
 fi
 
 
-# if
+## if
 #!/usr/bin/env bash
 
 COLOR=$1
@@ -921,7 +923,7 @@ fi
 
 
 
-# if
+## if
 
 #!/usr/bin/env bash
 
@@ -947,7 +949,7 @@ else
 fi
 
 
-# while 
+## while 
 
 #!/usr/bin/env bash
 
@@ -964,7 +966,7 @@ exit 0
 
 
 
-# for
+## for
 
 #!/usr/bin/env bash
 
@@ -980,7 +982,7 @@ exit 0
 
 
 
-# for
+## for
 
 #!/usr/bin/env bash
 
@@ -1002,7 +1004,7 @@ exit 0
 
 
 
-# counter
+## counter
 
 #!/usr/bin/env bash
 
@@ -1019,7 +1021,7 @@ echo "Loop finished"
 exit 0
 
 
-# var
+## var
 
 
 #!/usr/bin/env bash
